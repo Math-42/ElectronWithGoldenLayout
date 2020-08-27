@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link href="https://golden-layout.com/assets/css/goldenlayout-base.css" rel="stylesheet" />
+  <link href="https://golden-layout.com/assets/css/goldenlayout-dark-theme.css" rel="stylesheet" />
+  <style>
+    h2{
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+</body>
+
+<script>
+  try {
+    //require it from the main window
+    require('./renderer.js');
+  } catch (e) {
+    // require it from a popup window maked by the golden layou
+    require('./src/renderer.js');
+  }
+</script>
+
+</html>
